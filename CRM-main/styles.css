@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: auto;
+}
+a {
+  color: #158d8e;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.board {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  background: linear-gradient(to left, #081e17, #43c6acd7);
+  color: #edf2f2;
+}
+
+#todo-form {
+  padding: 32px 32px 0;
+}
+
+#todo-form input {
+  padding: 12px;
+  margin-right: 12px;
+  width: 225px;
+
+  border-radius: 4px;
+  border: none;
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background: white;
+
+  font-size: 14px;
+  outline: none;
+}
+.navsideBar {
+  /* background-color:  #158d8e  ; */
+  background-color: #020b0bda;
+}
+.lanes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 16px;
+  padding: 24px 32px;
+  height: 100%;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.coloumnAdd {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #edf2f2;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background-color: #43c6acd8;
+  padding: 12px;
+  border-radius: 4px;
+  width: 225px;
+  min-height: 120px;
+
+  flex-shrink: 0;
+}
+.swim-lane {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: white;
+  background: #43c6acd8;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  border-radius: 4px;
+  width: 225px;
+  min-height: 120px;
+
+  flex-shrink: 0;
+}
+.task {
+  background: white;
+  color: black;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+
+  padding: 12px;
+  border-radius: 4px;
+
+  font-size: 16px;
+  cursor: move;
+}
+.is-dragging {
+  scale: 1.05;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background-color: #158d8e;
+  color: black;
+}
+.card-body {
+  background-color: #f5f5f5;
+}
+.newTask {
+  text-align: center;
+  color: aliceblue;
+}
+.btn-primary {
+  background-color: #402dda;
+}
+.bi {
+  font-size: 25px;
+  text-align: center;
+  /* color:#158d8e; */
+  color: #264cde;
+}
+.offcanvas {
+  background-color: #158d8e;
+}
+.form-label {
+  color: aliceblue;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.popup h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.popup p {
+  margin-bottom: 5px;
+}
+
+.popup button {
+  padding: 8px 16px;
+  background-color: #402dda;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #264cde;
+}
